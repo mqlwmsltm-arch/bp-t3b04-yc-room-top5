@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="염창역 인근 룸싸롱 TOP5의 상세 정보를 제공합니다. 실제 방문자 데이터 기반 가격, 서비스, 위치 정보를 확인하세요.">
+    <meta name="keywords" content="염창 룸싸롱 정보, 염창 룸싸롱 TOP5, 염창 유흥 정보, 룸싸롱 가격, 염창 역 위치">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://t3b04-yc-room-top5.pages.dev/info">
+    <meta property="og:title" content="염창 룸싸롱 TOP5 | 상세 정보">
+    <meta property="og:description" content="염창역 인근 룸싸롱 TOP5의 상세 정보를 제공합니다. 실제 방문자 데이터 기반 가격, 서비스, 위치 정보를 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>염창 룸싸롱 TOP5 | 상세 정보</title>
+
+    <style>
+        /* === DESIGN SYSTEM : Brutalist Avantgarde / Neon-Void === */
+        :root {
+            --neon-pink: #ff2a6d;
+            --neon-blue: #05d9e8;
+            --neon-purple: #b967ff;
+            --bg-black: #0d0d0d;
+            --bg-dark: #1a1a1a;
+            --text-white: #f0f0f0;
+            --text-gray: #b0b0b0;
+            --border-neon: 2px solid var(--neon-pink);
+            --glow-pink: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+            --glow-blue: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+            --font-mono: 'Courier New', Courier, monospace;
+            --font-sans: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            font-family: var(--font-mono);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Typography — oversized, raw */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--neon-pink);
+            text-shadow: var(--glow-pink);
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            color: var(--neon-blue);
+            text-shadow: var(--glow-blue);
+            border-bottom: var(--border-neon);
+            padding-bottom: 0.3em;
+            margin-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: var(--neon-purple);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1em;
+            color: var(--text-gray);
+        }
+
+        a {
+            color: var(--neon-blue);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--neon-blue);
+            text-shadow: 0 0 5px var(--neon-blue);
+        }
+
+        /* Container — full bleed */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header & Navigation */
+        header {
+            width: 100%;
+            background: var(--bg-dark);
+            border-bottom: var(--border-neon);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--neon-pink);
+            text-shadow: var(--glow-pink);
+            letter-spacing: 0.2em;
+        }
+
+        .logo span {
+            color: var(--neon-blue);
+        }
+
+        /* Hamburger menu pattern */
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: var(--text-white);
+            margin: 6px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        #nav-toggle {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            font-family: var(--font-sans);
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            border-bottom-color: var(--neon-pink);
+            color: var(--neon-pink);
+        }
+
+        /* Responsive 768 */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--bg-dark);
+                border-bottom: var(--border-neon);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease;
+            }
+
+            #nav-toggle:checked ~ nav {
+                max-height: 500px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 1rem;
+            }
+
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+        }
+
+        /* Hero section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--neon-blue);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 1.5rem auto 0;
+            color: var(--text-white);
+        }
+
+        /* Section common */
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+        }
+
+        /* Card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--bg-dark);
+            border: var(--border-neon);
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--glow-pink);
+        }
+
+        .card h3 {
+            margin-bottom: 0.8rem;
+            color: var(--neon-pink);
+        }
+
+        .card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .card .badge {
+            display: inline-block;
+            background: var(--neon-pink);
+            color: var(--bg-black);
+            padding: 0.2rem 0.8rem;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            border-radius: 2px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 1rem 0;
+        }
+
+        .faq-item summary {
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--neon-blue);
+            list-style: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::before {
+            content: '► ';
+            color: var(--neon-pink);
+            transition: transform 0.3s;
+        }
+
+        .faq-item[open] summary::before {
+            content: '▼ ';
+        }
+
+        .faq-item p {
+            margin-top: 0.8rem;
+            padding-left: 1.5rem;
+            color: var(--text-gray);
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            background: var(--bg-dark);
+            border-top: var(--border-neon);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        footer a {
+            color: var(--neon-purple);
+        }
+
+        /* Data badge */
+        .data-badge {
+            background: #222;
+            border: 1px solid var(--neon-blue);
+            padding: 0.3rem 1rem;
+            font-size: 0.85rem;
+            color: var(--neon-blue);
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* utiltiy */
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 2rem; }
+        .mb-2 { margin-bottom: 2rem; }
+        .highlight { color: var(--neon-pink); font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">염창<span>TOP5</span></div>
+            <input type="checkbox" id="nav-toggle" aria-label="메뉴 열기">
+            <label for="nav-toggle" class="hamburger-menu" aria-label="네비게이션 토글">
+                <span></span><span></span><span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info" class="active">정보</a></li>
+                    <li><a href="/review">리뷰</a></li>
+                    <li><a href="/contact">상담</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <h1>염창 룸싸롱 TOP5<br>상세 정보</h1>
+            <p>실제 방문자 데이터와 검증된 리뷰를 기반으로 엄선한 염창역 인근 프리미엄 룸싸롱의 상세 정보를 제공합니다. 가격, 서비스, 위치 등 객관적인 데이터를 확인하세요.</p>
+            <
+</body>
+</html>
