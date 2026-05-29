@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5//sitemap.xml
