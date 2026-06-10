@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[염창 염창 룸싸롱 TOP5]]></title>
-  <link>https://t3b04-yc-room-top5.pages.dev</link>
-  <description><![CDATA[염창 룸싸롱 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 14:19:23 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 14:19:23 GMT</lastBuildDate>
-  <atom:link href="https://t3b04-yc-room-top5.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[룸싸롱]]></title>
+  <link>https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5</link>
+  <description><![CDATA[룸싸롱 - 염창 룸싸롱 TOP5 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 22:29:45 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 22:29:45 GMT</lastBuildDate>
+  <atom:link href="https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[염창 염창 룸싸롱 TOP5 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://t3b04-yc-room-top5.pages.dev/</link>
-      <guid isPermaLink="true">https://t3b04-yc-room-top5.pages.dev/</guid>
-      <description><![CDATA[염창 룸싸롱 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 14:19:23 GMT</pubDate>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5/posts/guide-001-1epx23s.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5/posts/guide-001-1epx23s.html</guid>
+      <description><![CDATA[### 포스트 메타정보포스트 기획 테마: 룸싸롱 해결 방법 총정리 — 전문가가 알려주는 5가지 팁 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 공식 가이드 채널 ## 구체적 니치 콘텐츠 작성 주어진 주제를 일반론으로 요약하지 말고, 독자]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[형님이 딱 말해주지, 염창 룸싸롱 TOP5 고르다가 밤 새운 사연과 다크소울 삭제된 맵의 공통점]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5/posts/review-001.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5/posts/review-001.html</guid>
+      <description><![CDATA[3 년 전, 스팀에 올렸던 그 인디 게임이 출시 3 일 만에 판매 중단된 진짜 이유를 아시는가? 표면적인 이유는 '치명적인 버그'였지만, 실제론 빌드 번호 v0.9.4-beta 에 포함된 '삭제된 지역' 데이터가 유출될 뻔했기 때문이다. 개발자로서 그날 밤의 공포는 지]]></description>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
