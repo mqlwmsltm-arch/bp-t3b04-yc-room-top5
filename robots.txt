@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://mqlwmsltm-arch.github.io/bp-t3b04-yc-room-top5//sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://yeomchang-guide-trend.hardcoreroom.com/sitemap.xml
