@@ -1,382 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="염창역 인근 룸싸롱 TOP5의 상세 정보를 제공합니다. 실제 방문자 데이터 기반 가격, 서비스, 위치 정보를 확인하세요.">
-    <meta name="keywords" content="염창 룸싸롱 정보, 염창 룸싸롱 TOP5, 염창 유흥 정보, 룸싸롱 가격, 염창 역 위치">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://yeomchang-guide-trend.hardcoreroom.com/about.html">
-    <meta property="og:title" content="염창 룸싸롱 TOP5 | 상세 정보">
-    <meta property="og:description" content="염창역 인근 룸싸롱 TOP5의 상세 정보를 제공합니다. 실제 방문자 데이터 기반 가격, 서비스, 위치 정보를 확인하세요.">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
-    <title>염창 룸싸롱 TOP5 | 상세 정보</title>
-
-    <style>
-        /* === DESIGN SYSTEM : Brutalist Avantgarde / Neon-Void === */
-        :root {
-            --neon-pink: #ff2a6d;
-            --neon-blue: #05d9e8;
-            --neon-purple: #b967ff;
-            --bg-black: #0d0d0d;
-            --bg-dark: #1a1a1a;
-            --text-white: #f0f0f0;
-            --text-gray: #b0b0b0;
-            --border-neon: 2px solid var(--neon-pink);
-            --glow-pink: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
-            --glow-blue: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
-            --font-mono: 'Courier New', Courier, monospace;
-            --font-sans: 'Arial', 'Helvetica', sans-serif;
-        }
-
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--bg-black);
-            color: var(--text-white);
-            font-family: var(--font-mono);
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Typography — oversized, raw */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-sans);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5em;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: var(--neon-pink);
-            text-shadow: var(--glow-pink);
-            line-height: 1.1;
-        }
-
-        h2 {
-            font-size: 2.8rem;
-            color: var(--neon-blue);
-            text-shadow: var(--glow-blue);
-            border-bottom: var(--border-neon);
-            padding-bottom: 0.3em;
-            margin-top: 1.5em;
-        }
-
-        h3 {
-            font-size: 2rem;
-            color: var(--neon-purple);
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1em;
-            color: var(--text-gray);
-        }
-
-        a {
-            color: var(--neon-blue);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s;
-        }
-
-        a:hover {
-            border-bottom-color: var(--neon-blue);
-            text-shadow: 0 0 5px var(--neon-blue);
-        }
-
-        /* Container — full bleed */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Header & Navigation */
-        header {
-            width: 100%;
-            background: var(--bg-dark);
-            border-bottom: var(--border-neon);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--neon-pink);
-            text-shadow: var(--glow-pink);
-            letter-spacing: 0.2em;
-        }
-
-        .logo span {
-            color: var(--neon-blue);
-        }
-
-        /* Hamburger menu pattern */
-        .hamburger-menu {
-            display: none;
-            cursor: pointer;
-        }
-
-        .hamburger-menu span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: var(--text-white);
-            margin: 6px 0;
-            border-radius: 2px;
-            transition: all 0.3s;
-        }
-
-        #nav-toggle {
-            display: none;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        nav ul li a {
-            font-family: var(--font-sans);
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0.5rem 0;
-            border-bottom: 2px solid transparent;
-        }
-
-        nav ul li a:hover,
-        nav ul li a.active {
-            border-bottom-color: var(--neon-pink);
-            color: var(--neon-pink);
-        }
-
-        /* Responsive 768 */
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: block;
-            }
-
-            nav {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--bg-dark);
-                border-bottom: var(--border-neon);
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.4s ease;
-            }
-
-            #nav-toggle:checked ~ nav {
-                max-height: 500px;
-            }
-
-            nav ul {
-                flex-direction: column;
-                padding: 1rem 2rem;
-                gap: 1rem;
-            }
-
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 2rem; }
-            h3 { font-size: 1.5rem; }
-        }
-
-        /* Hero section */
-        .hero {
-            padding: 4rem 0;
-            text-align: center;
-            border-bottom: 1px solid var(--neon-blue);
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 1.5rem auto 0;
-            color: var(--text-white);
-        }
-
-        /* Section common */
-        .section {
-            padding: 3rem 0;
-            border-bottom: 1px solid #333;
-        }
-
-        .section-title {
-            margin-bottom: 2rem;
-        }
-
-        /* Card grid */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .card {
-            background: var(--bg-dark);
-            border: var(--border-neon);
-            padding: 1.5rem;
-            border-radius: 4px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--glow-pink);
-        }
-
-        .card h3 {
-            margin-bottom: 0.8rem;
-            color: var(--neon-pink);
-        }
-
-        .card p {
-            color: var(--text-gray);
-            font-size: 0.95rem;
-        }
-
-        .card .badge {
-            display: inline-block;
-            background: var(--neon-pink);
-            color: var(--bg-black);
-            padding: 0.2rem 0.8rem;
-            font-weight: bold;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            border-radius: 2px;
-        }
-
-        /* FAQ */
-        .faq-item {
-            border-bottom: 1px solid #333;
-            padding: 1rem 0;
-        }
-
-        .faq-item summary {
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            color: var(--neon-blue);
-            list-style: none;
-        }
-
-        .faq-item summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .faq-item summary::before {
-            content: '► ';
-            color: var(--neon-pink);
-            transition: transform 0.3s;
-        }
-
-        .faq-item[open] summary::before {
-            content: '▼ ';
-        }
-
-        .faq-item p {
-            margin-top: 0.8rem;
-            padding-left: 1.5rem;
-            color: var(--text-gray);
-        }
-
-        /* Footer */
-        footer {
-            width: 100%;
-            background: var(--bg-dark);
-            border-top: var(--border-neon);
-            padding: 2rem 0;
-            text-align: center;
-            margin-top: auto;
-        }
-
-        footer p {
-            font-size: 0.9rem;
-            color: var(--text-gray);
-        }
-
-        footer a {
-            color: var(--neon-purple);
-        }
-
-        /* Data badge */
-        .data-badge {
-            background: #222;
-            border: 1px solid var(--neon-blue);
-            padding: 0.3rem 1rem;
-            font-size: 0.85rem;
-            color: var(--neon-blue);
-            display: inline-block;
-            margin-bottom: 0.5rem;
-        }
-
-        /* utiltiy */
-        .text-center { text-align: center; }
-        .mt-2 { margin-top: 2rem; }
-        .mb-2 { margin-bottom: 2rem; }
-        .highlight { color: var(--neon-pink); font-weight: bold; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="editorial-apple">
+<meta name="bpaas-design-theme" content="kr-ivory-ink">
+<title>염창 룸싸롱 TOP5: 당신의 선택을 결정짓는 냉철한 분석 가이드</title>
+<meta name="description" content="염창 룸싸롱 선택에 있어 실패는 곧 비용의 낭비입니다. 무분별한 광고성 순위를 배제하고, 실제 업장의 운영 철학과 서비스 밀도, 접근성을 기준으로 정리한 염창 룸싸롱 TOP5 핵심 가이드를 확인하십시오.">
+<meta name="keywords" content="염창 룸싸롱, 염창동 유흥, 염창 룸싸롱 TOP5, 유흥업소 선택 기준, 염창 비즈니스 접대">
+<link rel="canonical" href="https://yeomchang-guide-trend.hardcoreroom.com/about.html">
+<style>
+:root { --bg-color: #fdfcf8; --text-color: #1a1a1a; --accent-color: #8b0000; }
+body { font-family: 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.8; margin: 0; padding: 0; }
+.v-nav-6obm { display: flex; justify-content: space-between; padding: 20px 5%; border-bottom: 1px solid #ddd; }
+header { padding: 60px 5%; text-align: center; }
+h1 { font-size: 2.5rem; letter-spacing: -1px; }
+section { padding: 40px 5%; }
+h2 { border-left: 5px solid var(--accent-color); padding-left: 15px; margin-bottom: 25px; }
+.r-top-3mzw { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.r-side-q3m4 { background: #eee; padding: 20px; margin-top: 30px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ccc; padding: 12px; text-align: left; }
+footer { padding: 40px 5%; text-align: center; font-size: 0.8rem; border-top: 1px solid #ccc; }
+@media (max-width: 768px) { h1 { font-size: 1.8rem; } }
+</style>
   <meta property="og:url" content="https://yeomchang-guide-trend.hardcoreroom.com/about.html">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <div class="logo">염창<span>TOP5</span></div>
-            <input type="checkbox" id="nav-toggle" aria-label="메뉴 열기">
-            <label for="nav-toggle" class="hamburger-menu" aria-label="네비게이션 토글">
-                <span></span><span></span><span></span>
-            </label>
-            <nav>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/info" class="active">정보</a></li>
-                    <li><a href="/review">리뷰</a></li>
-                    <li><a href="/contact">상담</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="container">
-        <!-- Hero -->
-        <section class="hero">
-            <h1>염창 룸싸롱 TOP5<br>상세 정보</h1>
-            <p>실제 방문자 데이터와 검증된 리뷰를 기반으로 엄선한 염창역 인근 프리미엄 룸싸롱의 상세 정보를 제공합니다. 가격, 서비스, 위치 등 객관적인 데이터를 확인하세요.</p>
-            <
+<nav class="v-nav-6obm">
+    <div><strong>YEOMCHANG GUIDE</strong></div>
+    <div><span>홈</span> | <span>가이드</span> | <span>TOP5</span> | <span>문의</span></div>
+</nav>
+
+<header>
+    <h1>염창 룸싸롱 TOP5: 당신의 선택을 결정짓는 냉철한 분석</h1>
+    <p>검증되지 않은 정보는 시간과 비용을 동시에 앗아갑니다. 염창동 유흥 시장의 실질적인 기준점을 제시합니다.</p>
+</header>
+
+<section>
+    <h2>1. 왜 'TOP5'인가: 맹목적 선택의 위험성</h2>
+    <p>염창동 지역의 유흥업소는 겉으로 보이는 화려함 뒤에 각기 다른 운영 목적을 가지고 있습니다. 비즈니스 접대를 위한 정중한 분위기를 지향하는 곳이 있는가 하면, 친목 도모를 위한 캐주얼한 접근을 강조하는 곳도 존재합니다. 단순히 가격이 저렴하다는 이유로 선택하는 것은 큰 오산입니다.</p>
+    <p>우리가 제시하는 TOP5는 고객의 방문 목적, 인원 규모, 그리고 업장의 서비스 밀도를 종합적으로 평가하여 선정한 지표입니다. 실패 없는 밤을 보내기 위해서는 업장의 분위기가 자신의 목적과 일치하는지를 먼저 확인해야 합니다. 무작위적인 방문은 결국 만족도를 떨어뜨리는 원인이 됩니다.</p>
+</section>
+
+<section>
+    <h2>2. 업소별 핵심 비교 분석</h2>
+    <div class="r-top-3mzw">
+        <div>
+            <h3>A형: 프리미엄 비즈니스형</h3>
+            <p>공적인 접대가 목적이라면 가장 우선순위에 둬야 할 곳입니다. 룸 컨디션이 최상이며, 서비스의 일관성이 보장됩니다.</p>
+        </div>
+        <div>
+            <h3>B형: 가성비 중심 친목형</h3>
+            <p>인원수가 많고 자유로운 분위기를 원한다면 적합합니다. 군더더기 없는 서비스로 실속을 챙길 수 있습니다.</p>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th>구분</th>
+            <th>서비스 밀도</th>
+            <th>주요 타겟</th>
+        </tr>
+        <tr>
+            <td>프리미엄</td>
+            <td>상(상시 케어)</td>
+            <td>비즈니스 접대</td>
+        </tr>
+        <tr>
+            <td>캐주얼</td>
+            <td>중(자율 운용)</td>
+            <td>개인 친목 모임</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>3. 실패를 방지하는 5가지 체크리스트</h2>
+    <p>첫째, 방문 전 목적을 명확히 하십시오. 접대인지 사적인 모임인지에 따라 필요한 서비스의 성격이 달라집니다. 둘째, 인원 규모에 맞는 룸 크기를 사전 확보해야 합니다. 셋째, 업장의 피크 타임을 고려해 방문 시간을 조율하십시오. 넷째, 서비스의 비용 구조를 사전에 인지하여 불필요한 마찰을 예방하십시오. 다섯째, 검증된 경로를 통해 예약하여 서비스의 질을 보장받으십시오.</p>
+    <p>이러한 기준들은 단순히 유흥을 즐기는 것을 넘어, 당신의 소중한 시간을 효율적으로 소비하기 위한 전략입니다. 염창 룸싸롱 시장은 정보의 비대칭성이 심한 곳입니다. 따라서 스스로 기준을 세우고, 현명하게 업장을 비교하는 능력이 무엇보다 중요합니다.</p>
+</section>
+
+<section class="r-side-q3m4">
+    <h2>FAQ: 자주 묻는 질문</h2>
+    <p><strong>Q: 1인 방문도 가능한가요?</strong><br>A: 대부분의 업장은 가능하나, 피크 타임에는 예약이 어려울 수 있습니다.</p>
+    <p><strong>Q: 가격 변동이 심한 이유는 무엇인가요?</strong><br>A: 주류 구성과 서비스 타임에 따른 차이가 발생합니다. 사전 문의 시 명확한 안내를 받는 것이 좋습니다.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 염창 유흥 정보 가이드. 본 정보는 분석을 목적으로 하며, 실제 이용 시 업장의 정책을 다시 확인하시기 바랍니다.</p>
+</footer>
+
 </body>
 </html>
